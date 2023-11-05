@@ -1,0 +1,749 @@
+body {
+    margin: 25px;
+    padding: 0;
+    background: linear-gradient(135deg, #0c0c0c, #2f2f2f);
+    color: white;
+    border: 2px solid white;
+}
+
+header {
+    background-image: linear-gradient(to right, #f559b1, #dd2a7b); 
+    text-align: center;
+    padding: 20px;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 36px;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS for styling the navigation bar */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(to right, #f559b1, #dd2a7b);
+    overflow: hidden;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: grey;
+}
+
+/* button styles */
+
+.button-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    z-index: 999; 
+    display: flex;
+    flex-direction: row;
+}
+
+.bubble-button {
+    background-color: #65243c; 
+    color: white; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.bubble-button:hover {
+    background-color: #0056b3; 
+}
+
+
+/* Portfolio Page */
+.word-art-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slant-text {
+    font-size: 32px;
+    color: #ff6600; 
+    margin: 5px;
+    position: absolute;
+    transform: rotate(-15deg); 
+    transform-origin: 0 100%; 
+  }
+  
+  .slant-text:nth-child(odd) {
+    font-weight: bold;
+  }
+  
+  .slant-text:nth-child(even) {
+    color: #3399ff;
+  }
+  
+
+.about-me {
+    margin: 25px;
+    display: flex;
+    justify-content: flex-start;
+    font-size:20px;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.polaroid-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.polaroid {
+    display: inline-block;
+    border: 30px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: rotate(4deg);
+    margin: 50px;
+  }
+  
+  .polaroid img {
+    width: 400px;
+    display: block;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  .social-icons {
+    display: flex;
+    margin: 50px;
+    align-items: center;
+  }
+  
+  .linkedin-icon,
+  .github-icon {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .linkedin-icon img,
+  .github-icon img {
+    width: 45px; 
+  }
+  
+/* Education Section */
+.schoolimage-container {
+    position: relative;
+    width: 100%; 
+    height:400px;
+    overflow: hidden;
+  }
+  
+  .schoolimage-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .text-overlay h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .text-overlay p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .schoolimage-container:hover .text-overlay {
+    opacity: 1;
+  }
+  
+/* Industry Involvement Section */
+.slideshow-container {
+  position: relative;
+  max-width: 80%;
+  max-height: 10%;
+  margin: auto;
+}
+.slideshow-container:hover .text-overlay {
+  opacity: 1;
+}
+.mySlides {
+  display: none;
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -25px;
+  padding: 16px;
+  color: white;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+/* Clubs/Activities section */
+.club-row {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.club-row img {
+    width: 100px; 
+    height: 100px; 
+    margin: 0 10px;
+}
+
+/* Skills section */
+.skills {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+justify-content: center;
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 5.875rem;
+  height: 5.25rem;
+}
+/* Skills section ends */
+
+/* Projects section */
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  width: 30%;
+  padding: 20px;
+  background-color: #282828;
+  box-shadow: 0 2px 4px rgba(239, 49, 179, 0.552);
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.project p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #454545;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background-color: #da4181;
+}
+
+
+/* Work Experience section*/
+.work-experience {
+    padding: 20px;
+  }
+  
+  .experience-item {
+    display: flex;
+    border-left: 2px solid rgb(115, 109, 113);
+    border-right: 2px solid rgb(115, 109, 113);
+    padding: 20px 20px 20px 0;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(239, 49, 179, 0.552);
+  }
+  
+  .experience-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .company-icon {
+    margin-right: 20px;
+    width: 100px; 
+  }
+  
+  .company-icon img {
+    max-width: 100%;
+    margin-right: 80px;
+    height: auto;
+  }
+  
+  .company-details {
+    flex-grow: 1;
+  }
+  
+  .company-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .company-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .experience-description {
+    font-size: 16px;
+    margin-top: 50px;
+    color: white;
+  }
+  
+
+/* Add margin and padding to the introduction section */
+.introduction {
+    margin: 20px; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.introduction h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 16px; 
+    color: white;
+}
+
+.count-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.count-container {
+    text-align: flex-end;
+  }
+  
+  .count {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .label {
+    font-size: 16px;
+    color: #888;
+  }
+  
+/* stories style */
+
+.image-row {
+    text-align: center;
+    margin: 20px; 
+}
+
+.image-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid; 
+    border-radius: 50%;
+    background: transparent; 
+    box-sizing: border-box;
+}
+/* Add border to the entire circular image */
+/* Style the circle images */
+.circle-profile-image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    background-origin: border-box;
+    background-clip: content-box;
+    box-sizing: border-box;
+    cursor: pointer; 
+}
+
+.circle-profile-image img {
+    /* border: 5px solid #df529b;  */
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.circle-image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    background-origin: border-box;
+    background-clip: content-box;
+    box-sizing: border-box;
+    cursor: pointer; 
+}
+
+.circle-image img {
+    /* border: 5px solid #df529b;  */
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.circle-image:hover img {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* You can style your Instagram post template with CSS here */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+.post {
+    max-width: calc(50% - 100px); 
+    max-height: 20%;
+    width: 100%;
+    margin-right: 20px; 
+    margin-left: 20px;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img.profile-picture {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info .username {
+    font-weight: bold;
+}
+
+.post img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.likes {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.comments .comment {
+    margin-top: 5px;
+}
+
+.add-comment {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.add-comment input {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.add-comment button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Contact Me Section */
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color:  rgb(57, 57, 57);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(92, 92, 92);
+}
+
+/* Scholarships Container Section */
+.awards-container {
+  position:relative;
+  max-width: 80%;
+  max-height: 10%;
+  margin: auto;
+}
+
+.awards-container:hover .text-overlay {
+  opacity: 1;
+}
+
+.awards {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px 0;
+  max-width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  color:#0c0c0c
+}
+
+.awards img {
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+}
+
+.awards-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.scholarship-type {
+  font-style: italic;
+  color: #666;
+}
+
+.awards-details p {
+  font-size: 16px;
+}
+
+.requirements-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.requirements-list {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.award-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.award-amount {
+  font-size: 16px;
+}
+
+.application-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.apply-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(255, 67, 208);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.apply-link:hover {
+  background-color: #313131;
+}
+.awards-details {
+  display: block;
+  max-width: 100%;
+}
+
+
+
