@@ -590,6 +590,13 @@ justify-content: center;
     margin-top: 10px;
 }
 
+.post video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 10px
+}
+
 .post-actions button {
     background: none;
     border: none;
