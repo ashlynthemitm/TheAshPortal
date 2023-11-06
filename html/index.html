@@ -4,6 +4,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap">
+
 
   </head>
   <body>
@@ -25,24 +27,25 @@
     <div class="polaroid-container">
     <div>
       <h2 class="about-me"> Hello! Welcome to my portfolio my name is Ashlyn Campbell! I love to smile, laugh, and explore.
-        My favorite hobbies are watching great shows, hiking, travelling, and eatting good food. Nonetheless, I am dedicated to 
-        the technology field and aspire to build equitable solutions. This site is a personal project of mine where I display
-        my work, adventures and resources to for students to learn about scholarships to Study Abroad. Please check out the 
-        AshAbroad section to learn all about my trip to Bali!
+        My favorite hobbies are watching great shows, hiking, travelling, and eatting good food. I am dedicated to 
+        the technology field and helping my community. This site is a personal project of mine where I display
+        my portfolio, adventures and resources for students to learn about scholarships to Study Abroad. Please check out the 
+        Study Abroad Profile section to learn all about my trip to Bali!
       </h2> 
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ashlyncampbell3" target="_blank" rel="noopen" class="linkedin-icon">
+          <img src="../icons/LinkedinIcon.jpg" alt="LinkedIn Profile">
+        </a>
+        <a href="https://github.com/ashlynthemitm" target="_blank" class="github-icon">
+          <img src="../icons/githubIcon.jpg" alt="GitHub Profile">
+        </a>
+      </div>  
     </div>
     <div class="polaroid">
     <img src="../img/picsOfMe/ActHeadshot.jpg" alt="Polaroid Image">
   </div></div>
 
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/ashlyncampbell3" target="_blank" rel="noopen" class="linkedin-icon">
-      <img src="../icons/LinkedinIcon.jpg" alt="LinkedIn Profile">
-    </a>
-    <a href="https://github.com/ashlynthemitm" target="_blank" class="github-icon">
-      <img src="../icons/githubIcon.jpg" alt="GitHub Profile">
-    </a>
-  </div>  
+  
 
 </section>
  
@@ -55,16 +58,50 @@
     <img src="../img/other/city_background.jpeg" alt="Image of GSU">
     <div class="text-overlay">
       <h2>I am currently pursuing a Bachelor's degree of Computer Science,
-        with a focus in Data Science Certification and a Minor in Sociology at Georgia 
-       State University. </h2>
+        with a focus in Data Science and a Minor in Sociology at Georgia 
+       State University. I am a third-year Senior with an expected graduation date of 
+      December 2024! After graduation I intend to pursue a graduate degree in 
+    Computational Sociology and contribute to building equitable solutions.</h2>
     </div>
   </div>
 </section>
 
 
 <!-- Skills section -->
-<section class="skills" id="skills">
-  <h1 class="header-title">My Top Skills</h1>
+<section>
+<h1 class="header-title">My Top Skills</h1>
+<pre class="bubble-text-code">
+  1  from ProgrammingLanguages import languages
+  2  from MyBrain import ProgrammingSkills as skills
+  3
+  4  def printSkills():
+  5     skills_to_learn = []
+  6     for l in languages:
+  7          if l in skills:
+  8              print(l)
+  9          else:
+  10              skills_to_learn.append(l) 
+  11.   return current_skills
+  12  def main():
+  13      printSkills()
+  14      
+  15  if __name__ == "__main__":
+  16      main()
+      </pre>
+      <pre class="bubble-text">
+Output:
+
+$ Python 
+Java 
+C++ 
+HTML
+CSS 
+Javascript 
+SQL
+      </pre>
+</section>
+<!-- <section class="skills" id="skills">
+  
   
   <div class="skills-wrapper">
     <div class="first-set animate__animated animate__pulse">
@@ -109,7 +146,7 @@
         />
       </div>
     </div>
-  </section>
+  </section> -->
   
   <!-- Projects section -->
   <section>
@@ -250,7 +287,7 @@
     <div class="mySlides fade">
       <img src="../img/slideshow/IMG_8794.jpg" alt="Large TED">
       <div class="text-overlay">
-        <h2>I was selected amongst hundreds to students to attend The TEDWomen Conference!</h2>
+        <h2>I was selected amongst hundreds of students to attend The TEDWomen Conference in 2023!</h2>
       </div>
     </div>
 

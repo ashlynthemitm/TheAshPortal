@@ -752,5 +752,50 @@ button:hover {
   max-width: 100%;
 }
 
+/* Styling for the essay tips section */
+.essay-tips {
+  max-width: 76%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+/* Styling for individual essay boxes */
+.essay-box {
+  border: 2px solid rgb(247, 83, 211);
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
+.essay-box h3 {
+  font-size: 20px;
+  color: black;
+}
+
+/* Styling for essay content */
+.essay-content {
+  margin-top: 10px;
+}
+
+.essay-content p {
+  margin: 10px 0;
+  
+}
+
+.bubble-text {
+    font-family: 'Bubblegum Sans';
+    font-size: 20px;
+    color: #ff69b4; 
+}
+
+.bubble-text-code {
+  font-family: 'Bubblegum Sans';
+  font-size: 20px;
+  color: white;
+}
