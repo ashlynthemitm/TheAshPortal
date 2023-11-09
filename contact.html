@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Contact Me</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>   
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Study Abroad Profile</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-    <!-- Your webpage content goes here -->
-  <h1 class="header-title">Contact Me</h1>
-</header>
+    <header>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Study Abroad Profile</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <!-- Your webpage content goes here -->
+      <h1 class="header-title">Contact Me</h1>
+    </header>
 
-<!-- Contact Me Section // Finish later-->
-<section> 
-    <div class="contact-container">
-        <form method="POST" action="../contact-files/contact.php" >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" id="submit-button">Submit</button>
+    <!-- Contact Me Section // Finish later-->
+    <section>
+      <div class="contact-container">
+        <form
+          action="mailto:ashlycmitm@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" id="submit-button">Submit</button>
         </form>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script src="../js/script.js"></script>
-</body>
+    <script src="../js/script.js"></script>
+  </body>
   <footer>&copy; 2023 Made by Ash</footer>
 </html>
