@@ -25,10 +25,3 @@ Thanks to GitHub Pages!
 * **Study Abroad Experience**
 * **Scholarship Resources**
 
-## Prerequisites
-
-```bash
--- Install node version==18.18.2
-https://nodejs.org/en/download
-
-```
