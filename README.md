@@ -15,7 +15,8 @@ However, its significance extends beyond personal showcases. The website is desi
 
 ## Demo
 
-Include screenshots, gifs, or links to a live demo or video walkthrough of your project.
+Demo? No need for a Demo, the site is live at: https://ashlynthemitm.github.io/
+Thanks to GitHub Pages!
 
 ## Features
 
@@ -27,12 +28,7 @@ Include screenshots, gifs, or links to a live demo or video walkthrough of your 
 ## Prerequisites
 
 ```bash
-// MACOS Installation
-// Step 1: Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-// Step 2: Install PHP
-brew install php
-// Step 3: Install node version==18.18.2
+-- Install node version==18.18.2
 https://nodejs.org/en/download
 
 ```
