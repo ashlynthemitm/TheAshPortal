@@ -1,13 +1,13 @@
 body {
     margin: 25px;
     padding: 0;
-    background: linear-gradient(135deg, #0c0c0c, #2f2f2f);
+    background: linear-gradient(135deg, #212121, #000000);
     color: white;
     border: 2px solid white;
 }
 
 header {
-    background-image: linear-gradient(to right, #f559b1, #dd2a7b); 
+    background-image: linear-gradient(to right, #f559b1, #ff9dd4);
     text-align: center;
     padding: 20px;
 }
@@ -285,7 +285,7 @@ justify-content: center;
   width: 30%;
   padding: 20px;
   background-color: #282828;
-  box-shadow: 0 2px 4px rgba(239, 49, 179, 0.552);
+  box-shadow: 0 2px 4px #f559b1;
   text-align: center;
 }
 
@@ -325,7 +325,7 @@ justify-content: center;
     border-right: 2px solid rgb(115, 109, 113);
     padding: 20px 20px 20px 0;
     margin: 10px 0;
-    box-shadow: 0 2px 4px rgba(239, 49, 179, 0.552);
+    box-shadow: 0 2px 4px #f559b1;
   }
   
   .experience-details {
